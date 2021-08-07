@@ -1,0 +1,243 @@
+/* Classes help me to divide my Page*/
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+      width: 100%;
+      display: inline-block;
+    }
+  }
+.active{
+    color: tomato;
+}
+/*body style*/
+body{
+    margin: 0px;
+    padding: 0px;
+
+}
+/*mainContainer style*/
+.mainContainer{
+    min-height: 700px;
+    background-image: url("../Images/ProtofolioBG-Image.jpg");
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    opacity: 0.9;
+}
+
+/*container Style...*/
+.mainContainer .container{
+    margin: 0px auto;
+}
+/*Navbar Style*/
+.mainContainer .container .navbar{
+    background-color: #f6f6f6;
+    overflow: auto;
+}
+.mainContainer .container .navbar h3{
+    display: inline-block;
+    line-height: 40px;
+    margin-left: 20px;
+}
+.mainContainer .container .navbar h3 span{
+    color: tomato;
+}
+.mainContainer .container .navbar ul{
+    float: right;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f6f6f6;
+
+}
+.mainContainer .container .navbar ul li{
+    float: left;
+}
+.mainContainer .container .navbar ul li a{
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: bolder;
+    min-height: 53px;
+    line-height: 49px;
+} 
+li a:hover {
+    background-color: rgb(175, 162, 162);
+  }
+/*Style Introdaction*/
+.container .intro{
+    min-height: 300px;
+}
+.container .intro .introImage{
+    float: left;
+    text-align: center;
+}
+.container .intro .introImage img{
+    opacity: 1;
+    border-radius: 50%;
+}
+.container .intro .introInfo{
+    display: inline;
+    vertical-align:middle;
+    color: #fff;
+}
+.container .intro .introInfo h1{
+    display: inline;
+    box-sizing: border-box;
+    margin-top: 10%;
+    position: absolute;
+    margin-left: 3%;
+
+}
+.container .intro .introInfo span{
+    position: absolute;
+    box-sizing: border-box;
+    margin-top: 15%;
+    margin-left: 7%;
+}
+/*      Story       */
+.container .Story{
+    min-height: 300px;
+    background-color: #f6f6f6;
+}
+.container .Story h3{
+    text-align: center;
+    line-height: 3em;
+}
+.container .Story p{
+    column-count: 3;
+    margin: 9px;
+    column-rule: 3px dashed tomato;
+}
+/* Skills */
+.container .Skills{
+    background-color: #f6f6f6;
+    text-align: center;
+    box-sizing: border-box;
+}
+.container .Skills h3{
+    display: inline;
+    text-align: center;
+    line-height: 5em;
+    color: tomato;
+    font-size: 33px;
+    text-shadow: 2px 2px 3px black;
+}
+.container .Skills .skill{
+    background-color: #fff;
+    box-sizing: border-box;
+    margin: 15px;
+    min-height: 100px;
+    display: inline-block;
+}
+.container .Skills .skill .Icon{
+    display: inline;
+}
+.container .Skills .skill .Icon i{
+    float: left;
+    font-size: 60px;
+}
+.container .Skills .skill .skillInfo{
+    display: inline;
+    line-height: 35px;
+}
+/*  Subscribe  */
+.container .Subscribe{
+    background-color: #242424;
+    min-height: 400px;
+    color: #fff;
+}
+.container .Subscribe .header{
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    line-height: 4em;
+    
+}
+.container .Subscribe .SubscribeForm{
+    text-align: center;
+}
+.container .Subscribe .SubscribeForm .InputField{
+    display: inline;
+    background-color: gray;
+    padding: 10px;
+    border: 2px solid #fff;
+    border-radius: 13px;
+}
+.container .Subscribe .SubscribeForm .InputField:hover{
+    border: 2px solid goldenrod;
+    background-color: #fff;
+}
+.container .Subscribe .SubscribeForm .InputField:focus{
+    border: 2px solid orange;
+    background-color: #fff;
+}
+.container .Subscribe .SubscribeForm .Comment{
+    background-color: gray;
+    height: 70px;
+    transition: height 1.5s ease-in-out;
+}
+.container .Subscribe .SubscribeForm .Comment:hover{
+    border: 2px solid goldenrod;
+    background-color: #fff;
+}
+.container .Subscribe .SubscribeForm .Comment:focus{
+    border: 2px solid orange;
+    background-color: #fff;
+    height: 120px;
+}
+.container .Subscribe .SubscribeForm input[type="submit"]{
+    background-color: goldenrod;
+    width: 100px;
+    height: 50px;
+    border: 1px solid #fff;
+    border-radius: 14px;
+}
+
+/*Style afterFooter Div*/
+.container .afterFooter{
+    display: inline-block;
+    min-height: 300px;
+    background-color: #101010;
+    color:#fff;
+    box-sizing: border-box;
+    overflow: auto;
+    text-align: center;
+}
+
+.container .afterFooter .afterFooterItem{
+    display: inline-block;
+    text-align: left;
+}
+.container .afterFooter .afterFooterItem h5{
+    font-weight: bolder;
+    font-size: 25px;
+}
+.container .afterFooter .afterFooterItem ul{
+    list-style-type: none;
+    line-height: 20px;
+}
+
+/* footer style */
+.container .footer{
+    display: inline-block;
+    text-align: center;
+    color: #f6f6f6;
+}
